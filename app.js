@@ -1,9 +1,10 @@
 const express = require('express')
 const cors = require('cors')
-const { localhost, connectDB, test_db, prod_db } = require('./src/serverr')
+const { localhost, connectDB, test_db, prod_db } = require('./server')
 const authRouter = require('./src/routes/authRoutes')
 const cookieParser = require('cookie-parser')
-const { requireAuth, checkUser } = require('./middleware/authMiddleware')
+const { requireAuth, checkUser } = require('./src/middleware/authMiddleware')
+const path = require('path')
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(cookieParser());
 
 // view engine
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'src', 'views'));
 
 
 // routes
