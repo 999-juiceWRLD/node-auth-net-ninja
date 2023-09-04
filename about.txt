@@ -1,0 +1,7 @@
+AUTH ROUTES
+
+/signup     GET     signup page
+/login      GET     login page
+/signup     POST    create a new user in db
+/login      POST    authenticate the current user
+/logout     GET     log a user out

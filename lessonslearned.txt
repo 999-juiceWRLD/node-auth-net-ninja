@@ -1,0 +1,15 @@
+when creating html forms, use <input type="text"> instead of <input type="email">
+this will return your code on error instead of html's default validation.
+
+check out for res.cookie, res.locals
+
+Data Validation
+
+data validation is defined in schemas in mongoose.
+
+in order to create a custom validator besides the built-in validator
+in mongoose, say 
+
+`
+
+`
