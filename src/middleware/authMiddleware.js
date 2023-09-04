@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const { secretKey } = require('../controller/authController')
+const { secretKey } = require('../../../controller/authController')
 const User = require('../models/User')
 
 const requireAuth = (req, res, next) => {

@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-const { localhost, connectDB, test_db, prod_db } = require('./server')
-const authRouter = require('./routes/authRoutes')
+const { localhost, connectDB, test_db, prod_db } = require('./src/serverr')
+const authRouter = require('./src/routes/authRoutes')
 const cookieParser = require('cookie-parser')
 const { requireAuth, checkUser } = require('./middleware/authMiddleware')
 
